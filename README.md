@@ -76,9 +76,9 @@ configuration = pfsense_api_client.Configuration(
 
 
 # Enter a context with an instance of the API client
-with pfsense_api_client.ApiClient(configuration) as pfsense_api_client:
+with pfsense_api_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pfsense_api_client.AUTHApi(pfsense_api_client)
+    api_instance = pfsense_api_client.AUTHApi(api_client)
     id = pfsense_api_client.DeleteAuthKeyEndpointIdParameter() # DeleteAuthKeyEndpointIdParameter | The ID of the object to target.
 
     try:
