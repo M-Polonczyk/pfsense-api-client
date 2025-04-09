@@ -91,7 +91,7 @@ class RESTClientObject:
             pool_args["maxsize"] = configuration.connection_pool_maxsize
 
         # https pool manager
-        self.pool_manager: urllib3.PoolManager
+        self.pool_manager: urllib3.PoolManager(cert_reqs="CERT_NONE")
 
         if configuration.proxy:
             if is_socks_proxy_url(configuration.proxy):
