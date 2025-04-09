@@ -1,4 +1,4 @@
-# openapi_client.USERApi
+# pfsense_api_client.USERApi
 
 All URIs are relative to *http://localhost*
 
@@ -38,14 +38,14 @@ Method | HTTP request | Description
 * Bearer (JWT) Authentication (JWTAuth):
 
 ```python
-import openapi_client
+import pfsense_api_client
 from pfsense_api_client.models.get_user_auth_server_endpoint200_response import GetUserAuthServerEndpoint200Response
 from pfsense_api_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pfsense_api_client.Configuration(
     host = "http://localhost"
 )
 
@@ -61,21 +61,21 @@ configuration.api_key['KeyAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['KeyAuth'] = 'Bearer'
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = openapi_client.Configuration(
+configuration = pfsense_api_client.Configuration(
     username = os.environ["USERNAME"],
     password = os.environ["PASSWORD"]
 )
 
 # Configure Bearer authorization (JWT): JWTAuth
-configuration = openapi_client.Configuration(
+configuration = pfsense_api_client.Configuration(
     access_token = os.environ["BEARER_TOKEN"]
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pfsense_api_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.USERApi(api_client)
-    id = openapi_client.DeleteAuthKeyEndpointIdParameter() # DeleteAuthKeyEndpointIdParameter | The ID of the object to target.
+    api_instance = pfsense_api_client.USERApi(api_client)
+    id = pfsense_api_client.DeleteAuthKeyEndpointIdParameter() # DeleteAuthKeyEndpointIdParameter | The ID of the object to target.
 
     try:
         api_response = api_instance.delete_user_auth_server_endpoint(id)
@@ -139,14 +139,14 @@ Name | Type | Description  | Notes
 * Bearer (JWT) Authentication (JWTAuth):
 
 ```python
-import openapi_client
+import pfsense_api_client
 from pfsense_api_client.models.get_user_auth_servers_endpoint200_response import GetUserAuthServersEndpoint200Response
 from pfsense_api_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pfsense_api_client.Configuration(
     host = "http://localhost"
 )
 
@@ -162,20 +162,20 @@ configuration.api_key['KeyAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['KeyAuth'] = 'Bearer'
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = openapi_client.Configuration(
+configuration = pfsense_api_client.Configuration(
     username = os.environ["USERNAME"],
     password = os.environ["PASSWORD"]
 )
 
 # Configure Bearer authorization (JWT): JWTAuth
-configuration = openapi_client.Configuration(
+configuration = pfsense_api_client.Configuration(
     access_token = os.environ["BEARER_TOKEN"]
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pfsense_api_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.USERApi(api_client)
+    api_instance = pfsense_api_client.USERApi(api_client)
     limit = 0 # int | The maximum number of objects to delete at once. Set to 0 for no limit. (optional) (default to 0)
     offset = 0 # int | The starting point in the dataset to begin fetching objects. (optional) (default to 0)
     query = {'key': 'query_example'} # Dict[str, str] | The arbitrary query parameters to include in the request.<br><br>Note: This does not define an actual parameter, rather it allows for any arbitrary query parameters to be included in the request. (optional)
@@ -244,14 +244,14 @@ Name | Type | Description  | Notes
 * Bearer (JWT) Authentication (JWTAuth):
 
 ```python
-import openapi_client
+import pfsense_api_client
 from pfsense_api_client.models.get_user_endpoint200_response import GetUserEndpoint200Response
 from pfsense_api_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pfsense_api_client.Configuration(
     host = "http://localhost"
 )
 
@@ -267,21 +267,21 @@ configuration.api_key['KeyAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['KeyAuth'] = 'Bearer'
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = openapi_client.Configuration(
+configuration = pfsense_api_client.Configuration(
     username = os.environ["USERNAME"],
     password = os.environ["PASSWORD"]
 )
 
 # Configure Bearer authorization (JWT): JWTAuth
-configuration = openapi_client.Configuration(
+configuration = pfsense_api_client.Configuration(
     access_token = os.environ["BEARER_TOKEN"]
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pfsense_api_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.USERApi(api_client)
-    id = openapi_client.DeleteAuthKeyEndpointIdParameter() # DeleteAuthKeyEndpointIdParameter | The ID of the object to target.
+    api_instance = pfsense_api_client.USERApi(api_client)
+    id = pfsense_api_client.DeleteAuthKeyEndpointIdParameter() # DeleteAuthKeyEndpointIdParameter | The ID of the object to target.
 
     try:
         api_response = api_instance.delete_user_endpoint(id)
@@ -345,14 +345,14 @@ Name | Type | Description  | Notes
 * Bearer (JWT) Authentication (JWTAuth):
 
 ```python
-import openapi_client
+import pfsense_api_client
 from pfsense_api_client.models.get_user_group_endpoint200_response import GetUserGroupEndpoint200Response
 from pfsense_api_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pfsense_api_client.Configuration(
     host = "http://localhost"
 )
 
@@ -368,21 +368,21 @@ configuration.api_key['KeyAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['KeyAuth'] = 'Bearer'
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = openapi_client.Configuration(
+configuration = pfsense_api_client.Configuration(
     username = os.environ["USERNAME"],
     password = os.environ["PASSWORD"]
 )
 
 # Configure Bearer authorization (JWT): JWTAuth
-configuration = openapi_client.Configuration(
+configuration = pfsense_api_client.Configuration(
     access_token = os.environ["BEARER_TOKEN"]
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pfsense_api_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.USERApi(api_client)
-    id = openapi_client.DeleteAuthKeyEndpointIdParameter() # DeleteAuthKeyEndpointIdParameter | The ID of the object to target.
+    api_instance = pfsense_api_client.USERApi(api_client)
+    id = pfsense_api_client.DeleteAuthKeyEndpointIdParameter() # DeleteAuthKeyEndpointIdParameter | The ID of the object to target.
 
     try:
         api_response = api_instance.delete_user_group_endpoint(id)
@@ -446,14 +446,14 @@ Name | Type | Description  | Notes
 * Bearer (JWT) Authentication (JWTAuth):
 
 ```python
-import openapi_client
+import pfsense_api_client
 from pfsense_api_client.models.get_user_groups_endpoint200_response import GetUserGroupsEndpoint200Response
 from pfsense_api_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pfsense_api_client.Configuration(
     host = "http://localhost"
 )
 
@@ -469,20 +469,20 @@ configuration.api_key['KeyAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['KeyAuth'] = 'Bearer'
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = openapi_client.Configuration(
+configuration = pfsense_api_client.Configuration(
     username = os.environ["USERNAME"],
     password = os.environ["PASSWORD"]
 )
 
 # Configure Bearer authorization (JWT): JWTAuth
-configuration = openapi_client.Configuration(
+configuration = pfsense_api_client.Configuration(
     access_token = os.environ["BEARER_TOKEN"]
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pfsense_api_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.USERApi(api_client)
+    api_instance = pfsense_api_client.USERApi(api_client)
     limit = 0 # int | The maximum number of objects to delete at once. Set to 0 for no limit. (optional) (default to 0)
     offset = 0 # int | The starting point in the dataset to begin fetching objects. (optional) (default to 0)
     query = {'key': 'query_example'} # Dict[str, str] | The arbitrary query parameters to include in the request.<br><br>Note: This does not define an actual parameter, rather it allows for any arbitrary query parameters to be included in the request. (optional)
@@ -551,14 +551,14 @@ Name | Type | Description  | Notes
 * Bearer (JWT) Authentication (JWTAuth):
 
 ```python
-import openapi_client
+import pfsense_api_client
 from pfsense_api_client.models.get_users_endpoint200_response import GetUsersEndpoint200Response
 from pfsense_api_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pfsense_api_client.Configuration(
     host = "http://localhost"
 )
 
@@ -574,20 +574,20 @@ configuration.api_key['KeyAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['KeyAuth'] = 'Bearer'
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = openapi_client.Configuration(
+configuration = pfsense_api_client.Configuration(
     username = os.environ["USERNAME"],
     password = os.environ["PASSWORD"]
 )
 
 # Configure Bearer authorization (JWT): JWTAuth
-configuration = openapi_client.Configuration(
+configuration = pfsense_api_client.Configuration(
     access_token = os.environ["BEARER_TOKEN"]
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pfsense_api_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.USERApi(api_client)
+    api_instance = pfsense_api_client.USERApi(api_client)
     limit = 0 # int | The maximum number of objects to delete at once. Set to 0 for no limit. (optional) (default to 0)
     offset = 0 # int | The starting point in the dataset to begin fetching objects. (optional) (default to 0)
     query = {'key': 'query_example'} # Dict[str, str] | The arbitrary query parameters to include in the request.<br><br>Note: This does not define an actual parameter, rather it allows for any arbitrary query parameters to be included in the request. (optional)
@@ -656,14 +656,14 @@ Name | Type | Description  | Notes
 * Bearer (JWT) Authentication (JWTAuth):
 
 ```python
-import openapi_client
+import pfsense_api_client
 from pfsense_api_client.models.get_user_auth_server_endpoint200_response import GetUserAuthServerEndpoint200Response
 from pfsense_api_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pfsense_api_client.Configuration(
     host = "http://localhost"
 )
 
@@ -679,21 +679,21 @@ configuration.api_key['KeyAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['KeyAuth'] = 'Bearer'
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = openapi_client.Configuration(
+configuration = pfsense_api_client.Configuration(
     username = os.environ["USERNAME"],
     password = os.environ["PASSWORD"]
 )
 
 # Configure Bearer authorization (JWT): JWTAuth
-configuration = openapi_client.Configuration(
+configuration = pfsense_api_client.Configuration(
     access_token = os.environ["BEARER_TOKEN"]
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pfsense_api_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.USERApi(api_client)
-    id = openapi_client.DeleteAuthKeyEndpointIdParameter() # DeleteAuthKeyEndpointIdParameter | The ID of the object to target.
+    api_instance = pfsense_api_client.USERApi(api_client)
+    id = pfsense_api_client.DeleteAuthKeyEndpointIdParameter() # DeleteAuthKeyEndpointIdParameter | The ID of the object to target.
 
     try:
         api_response = api_instance.get_user_auth_server_endpoint(id)
@@ -757,14 +757,14 @@ Name | Type | Description  | Notes
 * Bearer (JWT) Authentication (JWTAuth):
 
 ```python
-import openapi_client
+import pfsense_api_client
 from pfsense_api_client.models.get_user_auth_servers_endpoint200_response import GetUserAuthServersEndpoint200Response
 from pfsense_api_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pfsense_api_client.Configuration(
     host = "http://localhost"
 )
 
@@ -780,20 +780,20 @@ configuration.api_key['KeyAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['KeyAuth'] = 'Bearer'
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = openapi_client.Configuration(
+configuration = pfsense_api_client.Configuration(
     username = os.environ["USERNAME"],
     password = os.environ["PASSWORD"]
 )
 
 # Configure Bearer authorization (JWT): JWTAuth
-configuration = openapi_client.Configuration(
+configuration = pfsense_api_client.Configuration(
     access_token = os.environ["BEARER_TOKEN"]
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pfsense_api_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.USERApi(api_client)
+    api_instance = pfsense_api_client.USERApi(api_client)
     limit = 0 # int | The number of objects to obtain at once. Set to 0 for no limit. (optional) (default to 0)
     offset = 0 # int | The starting point in the dataset to begin fetching objects. (optional) (default to 0)
     sort_by = ['sort_by_example'] # List[str] | The fields to sort response data by. (optional)
@@ -868,14 +868,14 @@ Name | Type | Description  | Notes
 * Bearer (JWT) Authentication (JWTAuth):
 
 ```python
-import openapi_client
+import pfsense_api_client
 from pfsense_api_client.models.get_user_endpoint200_response import GetUserEndpoint200Response
 from pfsense_api_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pfsense_api_client.Configuration(
     host = "http://localhost"
 )
 
@@ -891,21 +891,21 @@ configuration.api_key['KeyAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['KeyAuth'] = 'Bearer'
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = openapi_client.Configuration(
+configuration = pfsense_api_client.Configuration(
     username = os.environ["USERNAME"],
     password = os.environ["PASSWORD"]
 )
 
 # Configure Bearer authorization (JWT): JWTAuth
-configuration = openapi_client.Configuration(
+configuration = pfsense_api_client.Configuration(
     access_token = os.environ["BEARER_TOKEN"]
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pfsense_api_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.USERApi(api_client)
-    id = openapi_client.DeleteAuthKeyEndpointIdParameter() # DeleteAuthKeyEndpointIdParameter | The ID of the object to target.
+    api_instance = pfsense_api_client.USERApi(api_client)
+    id = pfsense_api_client.DeleteAuthKeyEndpointIdParameter() # DeleteAuthKeyEndpointIdParameter | The ID of the object to target.
 
     try:
         api_response = api_instance.get_user_endpoint(id)
@@ -969,14 +969,14 @@ Name | Type | Description  | Notes
 * Bearer (JWT) Authentication (JWTAuth):
 
 ```python
-import openapi_client
+import pfsense_api_client
 from pfsense_api_client.models.get_user_group_endpoint200_response import GetUserGroupEndpoint200Response
 from pfsense_api_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pfsense_api_client.Configuration(
     host = "http://localhost"
 )
 
@@ -992,21 +992,21 @@ configuration.api_key['KeyAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['KeyAuth'] = 'Bearer'
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = openapi_client.Configuration(
+configuration = pfsense_api_client.Configuration(
     username = os.environ["USERNAME"],
     password = os.environ["PASSWORD"]
 )
 
 # Configure Bearer authorization (JWT): JWTAuth
-configuration = openapi_client.Configuration(
+configuration = pfsense_api_client.Configuration(
     access_token = os.environ["BEARER_TOKEN"]
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pfsense_api_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.USERApi(api_client)
-    id = openapi_client.DeleteAuthKeyEndpointIdParameter() # DeleteAuthKeyEndpointIdParameter | The ID of the object to target.
+    api_instance = pfsense_api_client.USERApi(api_client)
+    id = pfsense_api_client.DeleteAuthKeyEndpointIdParameter() # DeleteAuthKeyEndpointIdParameter | The ID of the object to target.
 
     try:
         api_response = api_instance.get_user_group_endpoint(id)
@@ -1070,14 +1070,14 @@ Name | Type | Description  | Notes
 * Bearer (JWT) Authentication (JWTAuth):
 
 ```python
-import openapi_client
+import pfsense_api_client
 from pfsense_api_client.models.get_user_groups_endpoint200_response import GetUserGroupsEndpoint200Response
 from pfsense_api_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pfsense_api_client.Configuration(
     host = "http://localhost"
 )
 
@@ -1093,20 +1093,20 @@ configuration.api_key['KeyAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['KeyAuth'] = 'Bearer'
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = openapi_client.Configuration(
+configuration = pfsense_api_client.Configuration(
     username = os.environ["USERNAME"],
     password = os.environ["PASSWORD"]
 )
 
 # Configure Bearer authorization (JWT): JWTAuth
-configuration = openapi_client.Configuration(
+configuration = pfsense_api_client.Configuration(
     access_token = os.environ["BEARER_TOKEN"]
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pfsense_api_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.USERApi(api_client)
+    api_instance = pfsense_api_client.USERApi(api_client)
     limit = 0 # int | The number of objects to obtain at once. Set to 0 for no limit. (optional) (default to 0)
     offset = 0 # int | The starting point in the dataset to begin fetching objects. (optional) (default to 0)
     sort_by = ['sort_by_example'] # List[str] | The fields to sort response data by. (optional)
@@ -1181,14 +1181,14 @@ Name | Type | Description  | Notes
 * Bearer (JWT) Authentication (JWTAuth):
 
 ```python
-import openapi_client
+import pfsense_api_client
 from pfsense_api_client.models.get_users_endpoint200_response import GetUsersEndpoint200Response
 from pfsense_api_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pfsense_api_client.Configuration(
     host = "http://localhost"
 )
 
@@ -1204,20 +1204,20 @@ configuration.api_key['KeyAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['KeyAuth'] = 'Bearer'
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = openapi_client.Configuration(
+configuration = pfsense_api_client.Configuration(
     username = os.environ["USERNAME"],
     password = os.environ["PASSWORD"]
 )
 
 # Configure Bearer authorization (JWT): JWTAuth
-configuration = openapi_client.Configuration(
+configuration = pfsense_api_client.Configuration(
     access_token = os.environ["BEARER_TOKEN"]
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pfsense_api_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.USERApi(api_client)
+    api_instance = pfsense_api_client.USERApi(api_client)
     limit = 0 # int | The number of objects to obtain at once. Set to 0 for no limit. (optional) (default to 0)
     offset = 0 # int | The starting point in the dataset to begin fetching objects. (optional) (default to 0)
     sort_by = ['sort_by_example'] # List[str] | The fields to sort response data by. (optional)
@@ -1292,7 +1292,7 @@ Name | Type | Description  | Notes
 * Bearer (JWT) Authentication (JWTAuth):
 
 ```python
-import openapi_client
+import pfsense_api_client
 from pfsense_api_client.models.get_user_auth_server_endpoint200_response import GetUserAuthServerEndpoint200Response
 from pfsense_api_client.models.patch_user_auth_server_endpoint_request import PatchUserAuthServerEndpointRequest
 from pfsense_api_client.rest import ApiException
@@ -1300,7 +1300,7 @@ from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pfsense_api_client.Configuration(
     host = "http://localhost"
 )
 
@@ -1316,21 +1316,21 @@ configuration.api_key['KeyAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['KeyAuth'] = 'Bearer'
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = openapi_client.Configuration(
+configuration = pfsense_api_client.Configuration(
     username = os.environ["USERNAME"],
     password = os.environ["PASSWORD"]
 )
 
 # Configure Bearer authorization (JWT): JWTAuth
-configuration = openapi_client.Configuration(
+configuration = pfsense_api_client.Configuration(
     access_token = os.environ["BEARER_TOKEN"]
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pfsense_api_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.USERApi(api_client)
-    patch_user_auth_server_endpoint_request = openapi_client.PatchUserAuthServerEndpointRequest() # PatchUserAuthServerEndpointRequest |  (optional)
+    api_instance = pfsense_api_client.USERApi(api_client)
+    patch_user_auth_server_endpoint_request = pfsense_api_client.PatchUserAuthServerEndpointRequest() # PatchUserAuthServerEndpointRequest |  (optional)
 
     try:
         api_response = api_instance.patch_user_auth_server_endpoint(patch_user_auth_server_endpoint_request=patch_user_auth_server_endpoint_request)
@@ -1394,7 +1394,7 @@ Name | Type | Description  | Notes
 * Bearer (JWT) Authentication (JWTAuth):
 
 ```python
-import openapi_client
+import pfsense_api_client
 from pfsense_api_client.models.get_user_endpoint200_response import GetUserEndpoint200Response
 from pfsense_api_client.models.patch_user_endpoint_request import PatchUserEndpointRequest
 from pfsense_api_client.rest import ApiException
@@ -1402,7 +1402,7 @@ from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pfsense_api_client.Configuration(
     host = "http://localhost"
 )
 
@@ -1418,21 +1418,21 @@ configuration.api_key['KeyAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['KeyAuth'] = 'Bearer'
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = openapi_client.Configuration(
+configuration = pfsense_api_client.Configuration(
     username = os.environ["USERNAME"],
     password = os.environ["PASSWORD"]
 )
 
 # Configure Bearer authorization (JWT): JWTAuth
-configuration = openapi_client.Configuration(
+configuration = pfsense_api_client.Configuration(
     access_token = os.environ["BEARER_TOKEN"]
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pfsense_api_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.USERApi(api_client)
-    patch_user_endpoint_request = openapi_client.PatchUserEndpointRequest() # PatchUserEndpointRequest |  (optional)
+    api_instance = pfsense_api_client.USERApi(api_client)
+    patch_user_endpoint_request = pfsense_api_client.PatchUserEndpointRequest() # PatchUserEndpointRequest |  (optional)
 
     try:
         api_response = api_instance.patch_user_endpoint(patch_user_endpoint_request=patch_user_endpoint_request)
@@ -1496,7 +1496,7 @@ Name | Type | Description  | Notes
 * Bearer (JWT) Authentication (JWTAuth):
 
 ```python
-import openapi_client
+import pfsense_api_client
 from pfsense_api_client.models.get_user_group_endpoint200_response import GetUserGroupEndpoint200Response
 from pfsense_api_client.models.patch_user_group_endpoint_request import PatchUserGroupEndpointRequest
 from pfsense_api_client.rest import ApiException
@@ -1504,7 +1504,7 @@ from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pfsense_api_client.Configuration(
     host = "http://localhost"
 )
 
@@ -1520,21 +1520,21 @@ configuration.api_key['KeyAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['KeyAuth'] = 'Bearer'
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = openapi_client.Configuration(
+configuration = pfsense_api_client.Configuration(
     username = os.environ["USERNAME"],
     password = os.environ["PASSWORD"]
 )
 
 # Configure Bearer authorization (JWT): JWTAuth
-configuration = openapi_client.Configuration(
+configuration = pfsense_api_client.Configuration(
     access_token = os.environ["BEARER_TOKEN"]
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pfsense_api_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.USERApi(api_client)
-    patch_user_group_endpoint_request = openapi_client.PatchUserGroupEndpointRequest() # PatchUserGroupEndpointRequest |  (optional)
+    api_instance = pfsense_api_client.USERApi(api_client)
+    patch_user_group_endpoint_request = pfsense_api_client.PatchUserGroupEndpointRequest() # PatchUserGroupEndpointRequest |  (optional)
 
     try:
         api_response = api_instance.patch_user_group_endpoint(patch_user_group_endpoint_request=patch_user_group_endpoint_request)
@@ -1598,7 +1598,7 @@ Name | Type | Description  | Notes
 * Bearer (JWT) Authentication (JWTAuth):
 
 ```python
-import openapi_client
+import pfsense_api_client
 from pfsense_api_client.models.get_user_auth_server_endpoint200_response import GetUserAuthServerEndpoint200Response
 from pfsense_api_client.models.post_user_auth_server_endpoint_request import PostUserAuthServerEndpointRequest
 from pfsense_api_client.rest import ApiException
@@ -1606,7 +1606,7 @@ from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pfsense_api_client.Configuration(
     host = "http://localhost"
 )
 
@@ -1622,21 +1622,21 @@ configuration.api_key['KeyAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['KeyAuth'] = 'Bearer'
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = openapi_client.Configuration(
+configuration = pfsense_api_client.Configuration(
     username = os.environ["USERNAME"],
     password = os.environ["PASSWORD"]
 )
 
 # Configure Bearer authorization (JWT): JWTAuth
-configuration = openapi_client.Configuration(
+configuration = pfsense_api_client.Configuration(
     access_token = os.environ["BEARER_TOKEN"]
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pfsense_api_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.USERApi(api_client)
-    post_user_auth_server_endpoint_request = openapi_client.PostUserAuthServerEndpointRequest() # PostUserAuthServerEndpointRequest |  (optional)
+    api_instance = pfsense_api_client.USERApi(api_client)
+    post_user_auth_server_endpoint_request = pfsense_api_client.PostUserAuthServerEndpointRequest() # PostUserAuthServerEndpointRequest |  (optional)
 
     try:
         api_response = api_instance.post_user_auth_server_endpoint(post_user_auth_server_endpoint_request=post_user_auth_server_endpoint_request)
@@ -1700,7 +1700,7 @@ Name | Type | Description  | Notes
 * Bearer (JWT) Authentication (JWTAuth):
 
 ```python
-import openapi_client
+import pfsense_api_client
 from pfsense_api_client.models.get_user_endpoint200_response import GetUserEndpoint200Response
 from pfsense_api_client.models.post_user_endpoint_request import PostUserEndpointRequest
 from pfsense_api_client.rest import ApiException
@@ -1708,7 +1708,7 @@ from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pfsense_api_client.Configuration(
     host = "http://localhost"
 )
 
@@ -1724,21 +1724,21 @@ configuration.api_key['KeyAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['KeyAuth'] = 'Bearer'
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = openapi_client.Configuration(
+configuration = pfsense_api_client.Configuration(
     username = os.environ["USERNAME"],
     password = os.environ["PASSWORD"]
 )
 
 # Configure Bearer authorization (JWT): JWTAuth
-configuration = openapi_client.Configuration(
+configuration = pfsense_api_client.Configuration(
     access_token = os.environ["BEARER_TOKEN"]
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pfsense_api_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.USERApi(api_client)
-    post_user_endpoint_request = openapi_client.PostUserEndpointRequest() # PostUserEndpointRequest |  (optional)
+    api_instance = pfsense_api_client.USERApi(api_client)
+    post_user_endpoint_request = pfsense_api_client.PostUserEndpointRequest() # PostUserEndpointRequest |  (optional)
 
     try:
         api_response = api_instance.post_user_endpoint(post_user_endpoint_request=post_user_endpoint_request)
@@ -1802,7 +1802,7 @@ Name | Type | Description  | Notes
 * Bearer (JWT) Authentication (JWTAuth):
 
 ```python
-import openapi_client
+import pfsense_api_client
 from pfsense_api_client.models.get_user_group_endpoint200_response import GetUserGroupEndpoint200Response
 from pfsense_api_client.models.post_user_group_endpoint_request import PostUserGroupEndpointRequest
 from pfsense_api_client.rest import ApiException
@@ -1810,7 +1810,7 @@ from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pfsense_api_client.Configuration(
     host = "http://localhost"
 )
 
@@ -1826,21 +1826,21 @@ configuration.api_key['KeyAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['KeyAuth'] = 'Bearer'
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = openapi_client.Configuration(
+configuration = pfsense_api_client.Configuration(
     username = os.environ["USERNAME"],
     password = os.environ["PASSWORD"]
 )
 
 # Configure Bearer authorization (JWT): JWTAuth
-configuration = openapi_client.Configuration(
+configuration = pfsense_api_client.Configuration(
     access_token = os.environ["BEARER_TOKEN"]
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pfsense_api_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.USERApi(api_client)
-    post_user_group_endpoint_request = openapi_client.PostUserGroupEndpointRequest() # PostUserGroupEndpointRequest |  (optional)
+    api_instance = pfsense_api_client.USERApi(api_client)
+    post_user_group_endpoint_request = pfsense_api_client.PostUserGroupEndpointRequest() # PostUserGroupEndpointRequest |  (optional)
 
     try:
         api_response = api_instance.post_user_group_endpoint(post_user_group_endpoint_request=post_user_group_endpoint_request)
@@ -1904,7 +1904,7 @@ Name | Type | Description  | Notes
 * Bearer (JWT) Authentication (JWTAuth):
 
 ```python
-import openapi_client
+import pfsense_api_client
 from pfsense_api_client.models.get_user_auth_servers_endpoint200_response import GetUserAuthServersEndpoint200Response
 from pfsense_api_client.models.post_user_auth_server_endpoint_request import PostUserAuthServerEndpointRequest
 from pfsense_api_client.rest import ApiException
@@ -1912,7 +1912,7 @@ from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pfsense_api_client.Configuration(
     host = "http://localhost"
 )
 
@@ -1928,21 +1928,21 @@ configuration.api_key['KeyAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['KeyAuth'] = 'Bearer'
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = openapi_client.Configuration(
+configuration = pfsense_api_client.Configuration(
     username = os.environ["USERNAME"],
     password = os.environ["PASSWORD"]
 )
 
 # Configure Bearer authorization (JWT): JWTAuth
-configuration = openapi_client.Configuration(
+configuration = pfsense_api_client.Configuration(
     access_token = os.environ["BEARER_TOKEN"]
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pfsense_api_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.USERApi(api_client)
-    post_user_auth_server_endpoint_request = [openapi_client.PostUserAuthServerEndpointRequest()] # List[PostUserAuthServerEndpointRequest] |  (optional)
+    api_instance = pfsense_api_client.USERApi(api_client)
+    post_user_auth_server_endpoint_request = [pfsense_api_client.PostUserAuthServerEndpointRequest()] # List[PostUserAuthServerEndpointRequest] |  (optional)
 
     try:
         api_response = api_instance.put_user_auth_servers_endpoint(post_user_auth_server_endpoint_request=post_user_auth_server_endpoint_request)
@@ -2006,7 +2006,7 @@ Name | Type | Description  | Notes
 * Bearer (JWT) Authentication (JWTAuth):
 
 ```python
-import openapi_client
+import pfsense_api_client
 from pfsense_api_client.models.get_user_groups_endpoint200_response import GetUserGroupsEndpoint200Response
 from pfsense_api_client.models.post_user_group_endpoint_request import PostUserGroupEndpointRequest
 from pfsense_api_client.rest import ApiException
@@ -2014,7 +2014,7 @@ from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pfsense_api_client.Configuration(
     host = "http://localhost"
 )
 
@@ -2030,21 +2030,21 @@ configuration.api_key['KeyAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['KeyAuth'] = 'Bearer'
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = openapi_client.Configuration(
+configuration = pfsense_api_client.Configuration(
     username = os.environ["USERNAME"],
     password = os.environ["PASSWORD"]
 )
 
 # Configure Bearer authorization (JWT): JWTAuth
-configuration = openapi_client.Configuration(
+configuration = pfsense_api_client.Configuration(
     access_token = os.environ["BEARER_TOKEN"]
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pfsense_api_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.USERApi(api_client)
-    post_user_group_endpoint_request = [openapi_client.PostUserGroupEndpointRequest()] # List[PostUserGroupEndpointRequest] |  (optional)
+    api_instance = pfsense_api_client.USERApi(api_client)
+    post_user_group_endpoint_request = [pfsense_api_client.PostUserGroupEndpointRequest()] # List[PostUserGroupEndpointRequest] |  (optional)
 
     try:
         api_response = api_instance.put_user_groups_endpoint(post_user_group_endpoint_request=post_user_group_endpoint_request)
